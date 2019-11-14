@@ -1,0 +1,375 @@
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*body*/
+.home {
+    background: linear-gradient(to top, #1D0C0B, transparent 30px), url("photos/Eggys Home 2-2.jpg");
+    background-position: 20% 70%;
+    background-size: cover;
+    /*height: 100%;*/
+}
+/*      animation*/
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-10%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(10%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+/*       end animation*/
+.title {
+    font-family: "Comfortaa", sans-serif;
+    text-align: left;
+    padding-left: 250px;
+    padding-top: 55px;
+    font-size: 24pt;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+.title2 {
+    text-align: center;
+}
+.title3 {
+    font-family: "Comfortaa", sans-serif;
+    text-align: right;
+    padding-right: 280px;
+    font-size: 20px;
+    animation: 1s ease-out 0s 1 slideInFromRight;
+}
+.title3 a {
+    color: black;
+    text-decoration: none;
+}
+body {
+    background-color: #FFFBF4;
+    font-family: Comfortaa, sans-serif;
+}
+
+
+
+
+/*navigation bar*/
+.container {
+    height: 50px;
+    background-color: #1D0C0B;
+    font-family: Comfortaa, sans-serif;
+    text-align: center;
+    padding-top: 18px;
+}
+.container a:link {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    opacity: .7;
+}
+.container a:visited {
+    color: white;
+}
+a#top {
+    vertical-align: center;
+}
+a#gallery {
+    padding-right: 30px;
+    padding-left: 30px;
+    float: left;
+}
+a#menu {
+    padding-right: 400px;
+    float: left;
+}
+a#logo {
+
+}
+a#about {
+    padding-left: 30px;
+    padding-right: 30px;
+    float: right;
+}
+a#locations {
+    padding-left: 400px;
+    float: right;
+}
+
+
+
+
+
+/*Menu*/
+.menutitle {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-family: Comfortaa, sans-serif;
+    font-size: 50pt;
+}
+.menuimages {
+    text-align: center;
+}
+.menuimage {
+    display: inline;
+    margin: 0 15px;
+}
+.menu {
+    height: auto;
+    width: 500px;
+    margin: 30px 40px 0 50px;
+    display: inline-block;
+    vertical-align: text-top;
+    font-family: Calibri, sans-serif;
+    font-size: smaller;
+    padding-bottom: 50px;
+}
+.menu h1 {
+    text-align: center;
+}
+.menu2 {
+    height: auto;
+    width: 500px;
+    margin: 30px 50px 0 40px;
+    display: inline-block;
+    float: right;
+    vertical-align: text-top;
+    font-family: Calibri, sans-serif;
+    font-size: smaller;
+    padding-bottom: 50px;
+}
+.menu2 h1 {
+    text-align: center;
+}
+.item {
+    color: brown;
+    font-weight: bold;
+    text-align: justify;
+    /*begin leading dots*/
+    max-width: 40em;
+    padding: 0;
+    overflow-x: hidden;
+}
+.item p:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:
+            "..................................................."
+            "...................................................."
+            "................................................";
+}
+.item span:first-child {
+    padding-right: 0.33em;
+    background: #FFFBF4;
+}
+.item span + span {
+    float: right;
+    padding-left: 0.33em;
+    background: #FFFBF4;
+}
+/*   end leading dots*/
+
+/*   Delivery partners*/
+.one {
+    text-align: center;
+    margin-bottom: 5px;
+}
+.delivery {
+    height: 60px;
+    width: 600px;
+    border: brown solid 4px;
+    color: #1D0C0B;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+}
+.delivery a{
+    color: #1D0C0B;
+    font-weight: bold;
+    text-decoration: none;
+}
+.partner {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+
+
+
+
+/*about*/
+.container3 {
+    width: auto;
+    margin: 20px 100px;
+    text-align: center;
+}
+.container3 table{
+    display: inline-block;
+}
+.title4 {
+    vertical-align: middle;
+    padding-bottom: 20px;
+    font-family: Comfortaa, sans-serif;
+    font-size: large;
+}
+.title5 {
+    vertical-align: top;
+}
+.aboutimage {
+    margin: auto;
+    display: inline-block;
+    float: left;
+    width: 400px;
+    padding: 0 10px 20px 10px;
+}
+.creepylogo {
+    float: left;
+    height: 215px;
+    width: 166px;
+    border: solid firebrick 3px;
+    margin: 0 auto;
+}
+
+
+
+
+
+/*Gallery*/
+.gallery {
+    padding: 60px;
+}
+.row {
+    text-align: center;
+    padding-top: 45px;
+}
+.fadein {
+    display: inline;
+    margin: 0 25px;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+body.loaded .fadein {
+    opacity: 1;
+}
+.fadein2 {
+    display: inline;
+    margin: 25px;
+    opacity: 0;
+    transition: opacity 1.5s;
+    transition-delay: .3s;
+}
+body.loaded .fadein2 {
+    opacity: 1;
+}
+.fadein3 {
+    display: inline;
+    margin: 25px;
+    opacity: 0;
+    transition: opacity 1.5s;
+    transition-delay: .6s;
+}
+body.loaded .fadein3 {
+    opacity: 1;
+}
+.fadein4 {
+    display: inline;
+    margin: 20px;
+    opacity: 0;
+    transition: opacity 1.5s;
+    transition-delay: 1s;
+}
+body.loaded .fadein4 {
+    opacity: 1;
+}
+
+
+
+
+
+/*locations*/
+.wrapper {
+    margin-top: 20px;
+}
+/*    contact input boxes*/
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit] {
+    background-color: brown;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: firebrick;
+}
+.container2 {
+    /*float: left;*/
+    border-radius: 5px;
+    padding: 20px;
+}
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+/*    end contact boxes*/
+
+.minneapolis {
+    float: left;
+    width: 600px;
+    text-align: center;
+    margin-top: 6px;
+    padding: 20px;
+}
+.chicago {
+    float: right;
+    width: 600px;
+    text-align: center;
+    margin-top: 6px;
+    padding: 20px;
+}
+.locationimages {
+    display: inline-block;
+    width: 50%;
+    padding-bottom: 60px;
+}
+.map {
+    padding: 20px;
+    display: inline;
+}
+
+
+
+
+
+/*footer*/
+.footer {
+    font-family: Calibri, sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
